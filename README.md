@@ -20,10 +20,12 @@ module networking {
 }
 
 '''
-`providers.tf `
+`**~~__providers.tf**~~__ `
 
 provider aws {
-  region  = <<This should contain a region where u wish to run your template>>
-  profile = <<This should contain your profile you provided when configuring aws cli The default name is "default">>
+  region  = 
+<<This should contain a region where u wish to run your template>>
+  profile =
+<<This should contain your profile you provided when configuring aws cli The default name is "default">>
 }
 '''
