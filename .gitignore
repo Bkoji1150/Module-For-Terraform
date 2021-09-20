@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# Terraform
+koji-jairo
+.terraform.*
+.terraform
+.idea
