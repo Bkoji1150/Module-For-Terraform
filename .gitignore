@@ -33,6 +33,6 @@
 
 # Terraform
 koji-jairo
-.terraform.*
+.terraform
 .terraform.lock.hcl
 .idea
