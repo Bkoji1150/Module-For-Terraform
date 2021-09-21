@@ -6,7 +6,7 @@ terraform {
 }
 
 module "networking" {
-  source            = "git@github.com:Bkoji1150/module-for-terraform.git"
+  source            = "git@github.com:Bkoji1150/module-for-terraform.git//networkmodule"
   cidr_block        = var.cidr_block
   enable_dns        = var.enable_dns
   enable_hostname   = var.enable_hostname
