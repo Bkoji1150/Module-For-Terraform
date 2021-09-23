@@ -28,3 +28,22 @@ resource "aws_internet_gateway" "kj-IGW" {
     Name = "kj-pub-subnet"
   }
 }
+
+resource "aws_route_table" "kj-RT-private" {
+  vpc_id = aws_vpc.kj-vpc.id
+  tags = {
+    Name = "priv-subnet"
+  }
+}
+
+resource "aws_route_table_association" "pubic_RT_assoc" {
+  subnet_id      = aws_subnet.kj-pub-subnet.id
+  route_table_id = aws_route_table.kj-RT-public.id
+}
+
+resource "aws_route_table_association" "private_RT_assoc" {
+  subnet_id      = aws_subnet.kj-pri-subnet.id
+  route_table_id = aws_route_table.kj-RT-private.id
+}
+
+
