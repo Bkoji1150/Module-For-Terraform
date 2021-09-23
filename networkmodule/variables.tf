@@ -7,3 +7,5 @@ variable region {
 }
 variable cidr_block_public {}
 variable availability_zone {}
+variable availability_pri {}
+variable cidr_block_pri {}
