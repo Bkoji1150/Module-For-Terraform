@@ -6,5 +6,5 @@ gen-subnet = {
   dev = ["10.100.0.0/24", "10.100.1.0/24"]
 }
 gen-az = {
-  dev = ["us-east-1a", "us-east-1b"]
+  dev = ["us-east-1b", "us-east-1c"]
 }
