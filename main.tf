@@ -13,4 +13,6 @@ module "networking" {
   tagname           = lookup(var.tagname, terraform.workspace)
   cidr_block_public = var.gen-subnet.dev[1]
   availability_zone = var.gen-az.dev[1]
+ availability_pri = var.gen-subnet.dev[0]
+ cidr_block_pri = var.gen-subnet.dev[0]
 }
